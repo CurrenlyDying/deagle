@@ -1,11 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 27
+    namespace 'com.oasisfeng.deagle'
+    compileSdkVersion 34
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 27
+        minSdkVersion 21
+        targetSdkVersion 34
 
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
@@ -15,8 +16,8 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    dataBinding {
-        enabled true
+    buildFeatures {
+        dataBinding true
     }
 }
 
